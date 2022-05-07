@@ -1,0 +1,1 @@
+Imagem a ser colocada na biografia

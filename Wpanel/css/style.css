@@ -1,0 +1,26 @@
+.conteudo{
+  padding: 30px;
+}
+
+.img{
+  object-fit: cover;
+  height: 225px;
+}
+
+.editar:hover{
+  cursor: pointer;
+}
+
+.dados{
+  margin: 30px;
+}
+
+.dados .row{
+  border: 1px solid black;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+

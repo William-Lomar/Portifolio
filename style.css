@@ -1,0 +1,419 @@
+/* Boot */
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+ @font-face{
+  src:url("fonts/Quicksand_Book.otf");
+   font-family: "Quicksand";
+ }
+
+html, body{
+  font-family: "Quicksand";
+  width: 100%;
+  background-color: rgb(255,249,249);
+  overflow-x:hidden;
+  font-weight: 200;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+header{
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-family: "Roboto";
+  line-height: 12px;
+  font-weight: 500;
+  font-size:15px;
+  letter-spacing: 2.7px;
+  width: 100%;
+  background-color: #d6c671c4;
+  height: 70px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.clear{
+  clear: both;
+}
+
+.w50{
+  width: 50%;
+}
+
+.w33{
+  width:33.333333%;
+}
+
+.inline{
+  display: inline-block;
+  margin-right:-4px;
+}
+
+/*Fim boot */
+/* header */
+
+.img-header{
+  margin:0 40px;
+  float: left;
+  height:100%;
+}
+
+.img-header img{
+  display: inline-block;
+  height: 100%;
+  width: 300px;
+}
+
+.topicos{
+  float: right;
+  vertical-align: top;
+  height: 100%;
+}
+
+.topicos ul{
+  list-style-type: none;
+  padding:30px 0;
+}
+
+.topicos ul li{
+  margin-right:  30px;
+  display: inline-block;
+}
+
+.topicos a:hover, label:hover, .contato a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* fim header */
+/* banner */
+.banner{
+  position: relative;
+  height: 650px;
+}
+
+.img-banner{
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  background-size:cover;
+  background-position: center;
+}
+
+/*fim banner */
+/* box */
+.titulo{
+  text-align: center;
+  margin: 40px 0;
+}
+
+.titulo h1{
+  font-size: 32px;
+}
+
+.servicos{
+  margin-top: 100px;
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+.servicos h1{
+  font-size: 35px;
+  margin:25px 40px;
+  text-align: center;
+}
+
+.imgDestaque{
+  display: inline;
+}
+
+.imgDestaque img{
+  width:33.33333%; 
+  display: inline;
+  margin-right:-4px;
+  height: 350px;
+  object-fit: cover;
+}
+
+/*alinhamento central ne vertical: util*/;
+.black h1, .black h2{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+.black{
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  padding:125px 0;
+}
+
+.img-princ{
+  position: relative;
+  width:33.33333%;
+  display: inline-block;
+  margin-right:-4px;
+  vertical-align: bottom;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.black1{
+  display: none;
+}
+
+.black2{
+  display: none;
+}
+
+.black3{
+  display: none;
+}
+
+.black4{
+  display: none;
+}
+
+.black5{
+  display: none;
+}
+
+.black6{
+  display: none;
+}
+
+.black9{
+  display: none;
+}
+
+/*fim box*/
+/*box conteudo*/
+.box{
+  width: 50%;
+  display: inline;
+}
+
+.conteudo h1{
+  text-align: center;
+  font-size: 35px;
+  margin: 20px 0;
+}
+
+.conteudo img{
+  height: 350px;
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+  object-fit: cover;
+}
+
+/*fim box conteudo*/
+/*biografia */
+
+.img-bio{
+  width: 45%;
+}
+
+.biografia img{ 
+  margin: 0 auto;
+  display: block;
+}
+
+.biografia{
+  margin-top: 50px;
+}
+
+.bio{
+  vertical-align: top;
+  padding: 30px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.bio p{
+  font-weight: 50;
+ line-height: 35px;
+}
+
+.bio h1{
+  margin-bottom: 15px;
+}
+/*fim biografia*/
+/*contato*/
+
+.contato h1{
+  font-size: 60px;
+  margin:60px 0;
+  text-align: center;
+}
+
+.contato h2{
+  font-size: 20px;
+  margin:50px 50px 0 150px;
+ } 
+
+ .ft-contato{
+  text-align: center;
+  vertical-align: top
+ }
+
+ .contato-dados a{
+  color: black;
+ }
+
+/*fim contato*/
+
+footer{
+  padding:10px 0; 
+  margin-top: 50px;
+  font-size: 8px;
+  background-color: #212121;
+  text-align: center;
+  font-family: "Copperplate Gothic Light"
+}
+
+footer a{
+  color: rgb(0,255,0); 
+}
+
+@media screen and (max-width: 950px){
+  .img-bio{
+    display: block;
+    width: 100%;
+  }
+
+  .bio{
+    display: block;
+    width: 100%;
+  }
+
+  .servicos h1{
+      font-size: 30px;
+  }
+
+  .contato-dados{
+    width: 100%;
+    display: block;
+    margin-bottom: 100px;
+  }
+
+  .ft-contato{
+    display: block;
+    width: 100%;
+    
+  }
+}
+
+@media screen and (max-width: 900px){
+
+
+  .img-header{
+    display:block;
+    float: none;
+    width: 40%;
+    margin:0 auto;
+  }
+
+  header{
+    height: auto;
+    padding-top: 20px; 
+  }
+
+  .topicos{
+    display: block;
+    width:80%;
+    margin:0 auto;
+  }
+
+  .topicos ul{
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width:750px){
+   .imgDestaque img{
+    width: 100%;
+  } 
+
+  .img-princ{
+    width: 100%;
+  }
+
+  .topicos ul li{
+    margin:20px 0;
+    display: block;
+  }
+
+  .topicos ul{
+    margin:0;
+    padding: 0;
+  }
+
+  .topicos{
+    padding-bottom: 5px;
+  }
+
+  .img-header{
+    padding-top: 20px;
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .img-header img{
+    width: 70%;
+  }
+
+  .topicos{
+    float: none;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+
+   .sessoes{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .w50{
+    width: 100%;
+  }
+
+  .banner{
+  height: 400px;
+}
+
+
+}
+
+@media screen and (max-width: 600px){
+  .contato h2{
+    margin-left: 20px;
+  }
+}
+
